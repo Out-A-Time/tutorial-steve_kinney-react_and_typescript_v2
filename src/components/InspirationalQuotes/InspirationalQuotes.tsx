@@ -14,6 +14,8 @@ export type Quote = {
 export const fetchRandomQuote = async () => {
     const response = await fetch(`/api/quotes/random`);
     // const response = await fetch(`/api/quotes`);
+    console.log(response);
+
     return response.json();
 };
 
